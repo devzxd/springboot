@@ -1,4 +1,4 @@
-package com.kxlist.dao.daoimpl;
+package com.kxlist.dao.impl;
 
 import com.kxlist.dao.IPublicDao;
 import org.springframework.beans.factory.annotation.Autowired;
