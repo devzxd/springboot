@@ -1,7 +1,7 @@
-package com.kxlist.service;
+package com.zxd.service;
 
-import com.kxlist.bean.User;
-import com.kxlist.repository.UserRepository;
+import com.zxd.bean.User;
+import com.zxd.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

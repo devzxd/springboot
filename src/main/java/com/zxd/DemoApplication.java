@@ -1,4 +1,4 @@
-package com.kxlist;
+package com.zxd;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

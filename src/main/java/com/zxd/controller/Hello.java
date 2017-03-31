@@ -1,4 +1,4 @@
-package com.kxlist.controller;
+package com.zxd.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

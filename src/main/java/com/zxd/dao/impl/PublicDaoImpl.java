@@ -1,6 +1,6 @@
-package com.kxlist.dao.impl;
+package com.zxd.dao.impl;
 
-import com.kxlist.dao.IPublicDao;
+import com.zxd.dao.IPublicDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Query;

@@ -1,12 +1,9 @@
-package com.kxlist.controller;
+package com.zxd.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.kxlist.bean.Order;
-import com.kxlist.repository.OrderRepository;
-import com.kxlist.service.OrderService;
-import com.sun.tools.corba.se.idl.constExpr.Or;
+import com.zxd.bean.Order;
+import com.zxd.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.*;
 
 /**

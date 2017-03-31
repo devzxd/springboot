@@ -1,9 +1,8 @@
-package com.kxlist.controller;
+package com.zxd.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.kxlist.bean.User;
-import com.kxlist.repository.UserRepository;
-import com.kxlist.service.UserService;
+import com.zxd.bean.User;
+import com.zxd.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

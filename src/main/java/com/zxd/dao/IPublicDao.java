@@ -1,4 +1,4 @@
-package com.kxlist.dao;
+package com.zxd.dao;
 
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;

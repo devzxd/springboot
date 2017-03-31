@@ -1,6 +1,6 @@
-package com.kxlist.repository;
+package com.zxd.repository;
 
-import com.kxlist.bean.Order;
+import com.zxd.bean.Order;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

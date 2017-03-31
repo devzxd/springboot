@@ -1,26 +1,31 @@
-package com.kxlist.bean;
+package com.zxd.bean;
 
 import com.alibaba.fastjson.JSON;
+import org.hibernate.annotations.DynamicInsert;
+import org.hibernate.annotations.DynamicUpdate;
 import org.hibernate.annotations.GenericGenerator;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 /**
- * 订单
- *
  * @author zxd
- * @create 2017-03-31 16:34
+ * @create 2017-03-31 14:41
  **/
-@Document
-public class Order {
+@Entity
+@DynamicUpdate
+@DynamicInsert
+public class User {
+
     @Id
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name = "system-uuid", strategy = "uuid.hex")
     @Column(name = "id", nullable = false, length = 32, unique = true)
     private String id;
+
+    private int age;
 
     private String name;
 
@@ -30,6 +35,14 @@ public class Order {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public String getName() {
