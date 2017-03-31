@@ -1,0 +1,46 @@
+server:
+  port: 80
+  context-path: /demo
+spring:
+#数据库配置
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/spring_boot
+    username: root
+    password: 123456
+  # 配置初始化大小、最小、最大
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+  # 配置获取连接等待超时的时间
+    maxWait: 60000
+  # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+    timeBetweenEvictionRunsMillis: 60000
+  # 配置一个连接在池中最小生存的时间，单位是毫秒
+    minEvictableIdleTimeMillis: 30000
+    validationQuery: SELECT 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+   # 打开PSCache，并且指定每个连接上PSCache的大小。如果用Oracle，则把poolPreparedStatements配置为true，mysql可以配置为false。分库分表较多的数据库，建议配置为false。
+    poolPreparedStatements: false
+    maxPoolPreparedStatementPerConnectionSize: 20
+  # 配置监控统计拦截的filters
+    filters: stat
+#jpa配置
+  jpa:
+    database: mysql
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+#mongo配置
+  data:
+    mongodb:
+      database: spring_boot
+      uri: mongodb://127.0.0.1:27017
+
+
+
+
