@@ -28,20 +28,41 @@ public class OrderController {
         return order.toString();
     }
 
+    /**
+     * 按照id查找
+     * @param id
+     * @return
+     */
     @GetMapping("/{id}")
     public String findOrder(@PathVariable("id") String id){
         return orderService.findOne(id).toString();
     }
 
+    /**
+     * 查找全部
+     * @return
+     */
     @GetMapping
     public String findAll(){
         return JSON.toJSONString(orderService.findAll());
     }
 
+    /**
+     * 修改
+     * @param id
+     * @param name
+     * @return
+     */
     @PutMapping("/{id}")
     public String updateName(@PathVariable(value = "id") String id,@RequestParam("name") String name){
         return orderService.updateNameById(id,name)+"";
     }
+
+    /**
+     * 删除
+     * @param id
+     * @return
+     */
     @DeleteMapping("/{id}")
     public String delete(@PathVariable("id") String id){
         orderService.deleteById(id);
