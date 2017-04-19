@@ -1,11 +1,8 @@
 package com.zxd.bean;
 
 import com.alibaba.fastjson.JSON;
-import org.hibernate.annotations.GenericGenerator;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 /**
@@ -17,9 +14,6 @@ import javax.persistence.Id;
 @Document
 public class Order {
     @Id
-    @GeneratedValue(generator = "system-uuid")
-    @GenericGenerator(name = "system-uuid", strategy = "uuid.hex")
-    @Column(name = "id", nullable = false, length = 32, unique = true)
     private String id;
 
     private String name;
